@@ -1,6 +1,5 @@
 # Zenith
 A simple calculator, built with the power of **Swift**  💅
----
 
 ## Features
 
