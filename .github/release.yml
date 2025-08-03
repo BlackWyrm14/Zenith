@@ -1,0 +1,28 @@
+name: "Build and Release"
+
+on:
+  release:
+    types: [published]
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Configure CMake
+        run: cmake -B build
+        working-directory: ./Cpp
+
+      - name: Build
+        run: cmake --build build
+        working-directory: ./Cpp
+
+      - name: Create Release
+        uses: softprops/action-gh-release@v1
+        if: github.event_name == 'release' && github.event.action == 'published'
+        with:
+          files: ./Cpp/build/Zenith 
