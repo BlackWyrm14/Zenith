@@ -1,0 +1,23 @@
+name: C/C++ CI
+permissions:
+  contents: read
+
+on:
+  push:
+    branches: [ "main" ]
+  pull_request:
+    branches: [ "main" ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+    - uses: actions/checkout@v4
+      
+    - name: Configure CMake
+      run: cmake -B build
+      working-directory: ./Cpp
+
+    - name: Build
+      run: cmake --build build
+      working-directory: ./Cpp
