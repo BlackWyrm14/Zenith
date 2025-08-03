@@ -3,5 +3,5 @@ project(Calculator)
 
 set(CMAKE_CXX_STANDARD 26)
 
-add_executable(Calculator src/Calculator.cpp
+add_executable(Zenith src/Calculator.cpp
         src/Calculator.h)
