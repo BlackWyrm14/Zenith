@@ -1,55 +1,62 @@
-# Prerequisites
-*.d
+# Xcode
+#
+# gitignore contributors: remember to update Global/Xcode.gitignore, Objective-C.gitignore & Swift.gitignore
 
-# Compiled Object files
-*.slo
-*.lo
-*.o
-*.obj
+## User settings
+xcuserdata/
 
-# Precompiled Headers
-*.gch
-*.pch
+## Obj-C/Swift specific
+*.hmap
 
-# Linker files
-*.ilk
+## App packaging
+*.ipa
+*.dSYM.zip
+*.dSYM
 
-# Debugger Files
-*.pdb
+## Playgrounds
+timeline.xctimeline
+playground.xcworkspace
 
-# Compiled Dynamic libraries
-*.so
-*.dylib
-*.dll
+# Swift Package Manager
 
-# Fortran module files
-*.mod
-*.smod
+Add this line if you want to avoid checking in source code from Swift Package Manager dependencies.
+Packages/
+Package.pins
+Package.resolved
+*.xcodeproj
+#
+# Xcode automatically generates this directory with a .xcworkspacedata file and xcuserdata
+# hence it is not needed unless you have added a package configuration file to your project
+.swiftpm
 
-# Compiled Static libraries
-*.lai
-*.la
-*.a
-*.lib
+.build/
 
-# Executables
-*.exe
-*.out
-*.app
+# CocoaPods
+#
+# We recommend against adding the Pods directory to your .gitignore. However
+# you should judge for yourself, the pros and cons are mentioned at:
+# https://guides.cocoapods.org/using/using-cocoapods.html#should-i-check-the-pods-directory-into-source-control
+#
+# Pods/
+#
+# Add this line if you want to avoid checking in source code from the Xcode workspace
+# *.xcworkspace
 
-# debug information files
-*.dwo
+# Carthage
+#
+# Add this line if you want to avoid checking in source code from Carthage dependencies.
+# Carthage/Checkouts
 
-# CMake
-cmake-build-*/
-CMakeLists.txt.user
-CMakeCache.txt
-CMakeFiles
-CMakeScripts
-Testing
-Makefile
-cmake_install.cmake
-install_manifest.txt
-compile_commands.json
-CTestTestfile.cmake
-_deps
+Carthage/Build/
+
+# fastlane
+#
+# It is recommended to not store the screenshots in the git repo.
+# Instead, use fastlane to re-generate the screenshots whenever they are needed.
+# For more information about the recommended setup visit:
+# https://docs.fastlane.tools/best-practices/source-control/#source-control
+
+fastlane/report.xml
+fastlane/Preview.html
+fastlane/screenshots/**/*.png
+fastlane/test_output
