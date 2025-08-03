@@ -1,5 +1,8 @@
 # Zenith
-A simple calculator, built with the power of **Swift**  💅
+A simple calculator, built with the power of **Swift**  💅 
+
+Note: If you are looking for the C++ version for Windows, you can find the specific README in the cpp folder.
+
 
 ## Features
 
